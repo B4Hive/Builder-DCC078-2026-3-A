@@ -1,0 +1,12 @@
+@startuml classDiagram
+title Builder
+' Usado quando uma classe possui muitos atributos, pra simplificar a criação de objetos, evitando construtores com muitos parâmetros
+
+' Substitui new Blablabla(atr1,atr2,atrn) pelo builder
+
+class AlunoBuilder{
+    + build() : Aluno
+}
+AlunoBuilder --> "1" Aluno
+
+@enduml
