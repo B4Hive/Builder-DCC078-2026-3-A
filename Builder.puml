@@ -1,12 +1,10 @@
 @startuml classDiagram
 title Builder
-' Usado quando uma classe possui muitos atributos, pra simplificar a criação de objetos, evitando construtores com muitos parâmetros
+' Usado para simplificar a criação de pedidos com muitos atributos
 
-' Substitui new Blablabla(atr1,atr2,atrn) pelo builder
-
-class AlunoBuilder{
-    + build() : Aluno
+class PedidoBuilder {
+    + build() : Pedido
 }
-AlunoBuilder --> "1" Aluno
+PedidoBuilder --> "1" Pedido
 
 @enduml
